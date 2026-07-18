@@ -1,5 +1,5 @@
-(ns organizer.py.agent
-  "organizer — kotoba-native auto-organize file commons. 1:1 port of py/agent.py. Content-addressed,
+(ns organizer.methods.agent
+  "organizer — kotoba-native auto-organize file commons. Content-addressed,
   vault-isolated items. Structural invariants: content-addressed dedup (G4 — itemId from the blake3
   of content), vault-isolation (G3 — an item belongs to exactly one vault; cross-vault read refused),
   no-mining (G2 — classification is owner-facing category/labels, no profile/ad field), no-server-key

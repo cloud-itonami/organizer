@@ -1,12 +1,12 @@
-(ns organizer.py.test-agent
-  "organizer — auto-organize file commons tests. 1:1 port of py/test_agent.py. Verifies the
+(ns organizer.methods.agent-test
+  "organizer — auto-organize file commons tests. Verifies the
   structural invariants of ADR-2606072400: G4 content-addressed dedup, G3 vault-isolation (cross-
   vault read refused), G2 no-mining (classification has no profile/ad field; owner-facing), G6
   no-server-key (only a member signature finalizes), and auto-organize (rule maps category →
   collection)."
   (:require [clojure.test :refer [deftest is]]
             [clojure.string :as str]
-            [organizer.py.agent :as agent]))
+            [organizer.methods.agent :as agent]))
 
 (def VA "did:web:organizer.etzhayyim.com:vault:alice")
 (def VB "did:web:organizer.etzhayyim.com:vault:bob")

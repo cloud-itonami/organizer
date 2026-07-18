@@ -1,9 +1,9 @@
 # etzhayyim-project-organizer — organizer.etzhayyim.com
 
 > **kotoba-native (ADR-2606072400).** Canonical manifest is now `manifest.edn`; data model in
-> `kotoba/schema.edn`; logic + tests in `py/` (14 green). Free auto-organize file commons:
+> `schema/kotoba.edn`; logic in `src/organizer/` and tests in `test/organizer/` (14 green). Free auto-organize file commons:
 > content-addressed dedup (Blake3), per-vault isolation, encrypted blobs, member-signed, and
-> **no content mining**. Legacy `actor-manifest.jsonld` (RisingWave) is DEPRECATED
+> **no content mining**. `wire/wire/actor-manifest.jsonld` is an external compatibility projection
 > (`DEPRECATED-jsonld.md`); subscription-discovery pipeline retained as a follow-up. Below is historical.
 
 **Upload → AI Auto-Organize** — アップロードすれば AI が自動で整理。フォルダ手動整理不要。
@@ -50,7 +50,7 @@
 
 **メール課金通知からサブスクを自動検出し、不要契約の解約を kaiyaku に委譲する。**
 
-> **kaiyaku now exists** (ADR-2606112201, `20-actors/kaiyaku/`, 🟡 R0): 縁切り executor —
+> **kaiyaku now exists** (ADR-2606112201, `the standalone kaiyaku repository`, 🟡 R0): 縁切り executor —
 > en-ledger + burden analyzer (this pipeline's disclosed thresholds) + dependency
 > cascade-guard + T1/T2/T3 severance plans (karakuri tiers; dry-run only, execution
 > Council-gated). Canonical DID `did:web:etzhayyim.com:actor:kaiyaku`

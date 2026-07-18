@@ -1,14 +1,15 @@
-;; organizer — actor manifest (kotoba-native; supersedes actor-manifest.jsonld)
+;; organizer — actor manifest (kotoba-native; supersedes wire/actor-manifest.jsonld)
 ;; Auto-organize file commons (Google Drive inversion) — free, content-addressed,
 ;; vault-isolated, un-mined. ADR-2606072400 (remediation Phase A of ADR-2606071800)
 {:actor/id        "organizer"
  :actor/glyph     "整"
  :actor/tier      :tier-b
+ :actor/integrates ["kaiyaku" "tenso"]
  :actor/domain    "organizer.etzhayyim.com"
  :actor/purpose   "Google-Drive-inverse auto-organize file commons — upload → AI auto-classifies + groups into collections, FREE with no storage tiers and NO content mining. Items are content-addressed (Blake3) so identical content dedups to one item; each item is isolated to its owner's vault DID; blobs are encrypted at rest; mutations are member-signed. Classification emits category/labels for the OWNER only — never a profile, ad signal, or cross-vault aggregate. kotoba-EAVT-native, Murakumo-only."
  :actor/status    :r1
  :actor/adr       "2606072400"
- :actor/supersedes "actor-manifest.jsonld (legacy single-Worker / RisingWave; deprecated, removed after 1 R-cycle)"
+ :actor/wire-projection "wire/wire/actor-manifest.jsonld"
 
  :actor/charter-rider
  {:rider/version "2.0"
