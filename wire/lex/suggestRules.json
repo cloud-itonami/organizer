@@ -1,54 +1,51 @@
 {
-  "lexicon": 1,
-  "id": "com.etzhayyim.apps.organizer.suggestRules",
-  "defs": {
-    "main": {
-      "type": "procedure",
-      "description": "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
-      "x-bootstrap": true,
-      "input": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "bodyText": {
-              "type": "string"
+  "lexicon" : 1,
+  "id" : "com.etzhayyim.apps.organizer.suggestRules",
+  "defs" : {
+    "main" : {
+      "type" : "procedure",
+      "description" : "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
+      "x-bootstrap" : true,
+      "input" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "bodyText" : {
+              "type" : "string"
             },
-            "limit": {
-              "type": "number"
+            "limit" : {
+              "type" : "number"
             },
-            "orgId": {
-              "type": "integer"
+            "orgId" : {
+              "type" : "integer"
             },
-            "sender": {
-              "type": "string"
+            "sender" : {
+              "type" : "string"
             },
-            "subject": {
-              "type": "string"
+            "subject" : {
+              "type" : "string"
             },
-            "subscriptionId": {
-              "type": "integer"
+            "subscriptionId" : {
+              "type" : "integer"
             }
           },
-          "required": [
-            "subject",
-            "subscriptionId"
-          ]
+          "required" : [ "subject", "subscriptionId" ]
         }
       },
-      "output": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "suggestions": {
-              "type": "string"
+      "output" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "suggestions" : {
+              "type" : "string"
             },
-            "total": {
-              "type": "integer"
+            "total" : {
+              "type" : "integer"
             }
           },
-          "required": []
+          "required" : [ ]
         }
       }
     }

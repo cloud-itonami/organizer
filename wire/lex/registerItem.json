@@ -1,93 +1,90 @@
 {
-  "lexicon": 1,
-  "id": "com.etzhayyim.apps.organizer.registerItem",
-  "defs": {
-    "main": {
-      "type": "procedure",
-      "description": "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
-      "x-bootstrap": true,
-      "input": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "blake3": {
-              "type": "string"
+  "lexicon" : 1,
+  "id" : "com.etzhayyim.apps.organizer.registerItem",
+  "defs" : {
+    "main" : {
+      "type" : "procedure",
+      "description" : "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
+      "x-bootstrap" : true,
+      "input" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "blake3" : {
+              "type" : "string"
             },
-            "blobRef": {
-              "type": "string"
+            "blobRef" : {
+              "type" : "string"
             },
-            "contentType": {
-              "type": "string"
+            "contentType" : {
+              "type" : "string"
             },
-            "filename": {
-              "type": "string"
+            "filename" : {
+              "type" : "string"
             },
-            "orgId": {
-              "type": "integer"
+            "orgId" : {
+              "type" : "integer"
             },
-            "size": {
-              "type": "number"
+            "size" : {
+              "type" : "number"
             },
-            "userId": {
-              "type": "integer"
+            "userId" : {
+              "type" : "integer"
             },
-            "vaultDid": {
-              "type": "integer"
+            "vaultDid" : {
+              "type" : "integer"
             }
           },
-          "required": [
-            "blake3",
-            "filename"
-          ]
+          "required" : [ "blake3", "filename" ]
         }
       },
-      "output": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "error": {
-              "type": "string"
+      "output" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "updatedAt" : {
+              "type" : "string"
             },
-            "filename": {
-              "type": "string"
+            "createdAt" : {
+              "type" : "string"
             },
-            "content_type": {
-              "type": "string"
+            "blake3" : {
+              "type" : "string"
             },
-            "size": {
-              "type": "number"
+            "error" : {
+              "type" : "string"
             },
-            "blake3": {
-              "type": "string"
+            "vault_did" : {
+              "type" : "integer"
             },
-            "blob_ref": {
-              "type": "string"
+            "blob_ref" : {
+              "type" : "string"
             },
-            "vault_did": {
-              "type": "integer"
+            "status" : {
+              "type" : "string"
             },
-            "status": {
-              "type": "string"
+            "existingItemId" : {
+              "type" : "integer"
             },
-            "createdAt": {
-              "type": "string"
+            "itemId" : {
+              "type" : "integer"
             },
-            "updatedAt": {
-              "type": "string"
+            "size" : {
+              "type" : "number"
             },
-            "existingItemId": {
-              "type": "integer"
+            "content_type" : {
+              "type" : "string"
             },
-            "itemId": {
-              "type": "integer"
+            "filename" : {
+              "type" : "string"
             },
-            "blob_key": {
-              "type": "string"
+            "blob_key" : {
+              "type" : "string"
             }
           },
-          "required": []
+          "required" : [ ]
         }
       }
     }
