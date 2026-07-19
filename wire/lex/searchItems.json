@@ -1,57 +1,57 @@
 {
-  "lexicon": 1,
-  "id": "com.etzhayyim.apps.organizer.searchItems",
-  "defs": {
-    "main": {
-      "type": "query",
-      "description": "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
-      "x-bootstrap": true,
-      "parameters": {
-        "type": "params",
-        "properties": {
-          "contentType": {
-            "type": "string"
+  "lexicon" : 1,
+  "id" : "com.etzhayyim.apps.organizer.searchItems",
+  "defs" : {
+    "main" : {
+      "type" : "query",
+      "description" : "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
+      "x-bootstrap" : true,
+      "parameters" : {
+        "type" : "params",
+        "properties" : {
+          "contentType" : {
+            "type" : "string"
           },
-          "createdAfter": {
-            "type": "string"
+          "createdAfter" : {
+            "type" : "string"
           },
-          "createdBefore": {
-            "type": "string"
+          "createdBefore" : {
+            "type" : "string"
           },
-          "orgId": {
-            "type": "integer"
+          "orgId" : {
+            "type" : "integer"
           },
-          "query": {
-            "type": "string"
+          "query" : {
+            "type" : "string"
           },
-          "vaultDid": {
-            "type": "integer"
+          "vaultDid" : {
+            "type" : "integer"
           }
         },
-        "required": []
+        "required" : [ ]
       },
-      "output": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "items": {
-              "type": "number"
+      "output" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "items" : {
+              "type" : "number"
             },
-            "total": {
-              "type": "integer"
+            "total" : {
+              "type" : "integer"
             },
-            "offset": {
-              "type": "integer"
+            "offset" : {
+              "type" : "integer"
             },
-            "limit": {
-              "type": "integer"
+            "limit" : {
+              "type" : "integer"
             },
-            "query": {
-              "type": "string"
+            "query" : {
+              "type" : "string"
             }
           },
-          "required": []
+          "required" : [ ]
         }
       }
     }

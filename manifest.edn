@@ -31,9 +31,28 @@
   {:cell/id "organize"  :cell/kind :langgraph :cell/runtime :wasm   :cell/doc "classify (Murakumo G7) → organize-rule → collection (auto-organize)"}]
 
  :actor/lexicons
- ["com.etzhayyim.organizer.item"
+ ["com.etzhayyim.apps.organizer.addTag"
+  "com.etzhayyim.apps.organizer.addToCollection"
+  "com.etzhayyim.apps.organizer.analyzeSubscriptions"
+  "com.etzhayyim.apps.organizer.createCollection"
+  "com.etzhayyim.apps.organizer.createRule"
+  "com.etzhayyim.apps.organizer.deleteItem"
+  "com.etzhayyim.apps.organizer.deleteRule"
+  "com.etzhayyim.apps.organizer.detectSubscription"
+  "com.etzhayyim.apps.organizer.getRecommendations"
+  "com.etzhayyim.apps.organizer.getVaultStats"
+  "com.etzhayyim.apps.organizer.listCollections"
+  "com.etzhayyim.apps.organizer.listItems"
+  "com.etzhayyim.apps.organizer.reclassify"
+  "com.etzhayyim.apps.organizer.registerItem"
+  "com.etzhayyim.apps.organizer.removeFromCollection"
+  "com.etzhayyim.apps.organizer.removeTag"
+  "com.etzhayyim.apps.organizer.requestCancellation"
+  "com.etzhayyim.apps.organizer.searchItems"
+  "com.etzhayyim.apps.organizer.suggestRules"
   "com.etzhayyim.organizer.classification"
-  "com.etzhayyim.organizer.collection"]
+  "com.etzhayyim.organizer.collection"
+  "com.etzhayyim.organizer.item"]
 
  :actor/deferred
  {:subscription-discovery "mailer → organizer → kaiyaku pipeline retained as a follow-up (not this core conversion)"}

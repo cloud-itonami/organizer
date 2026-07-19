@@ -1,42 +1,42 @@
 {
-  "lexicon": 1,
-  "id": "com.etzhayyim.apps.organizer.getRecommendations",
-  "defs": {
-    "main": {
-      "type": "query",
-      "description": "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
-      "x-bootstrap": true,
-      "parameters": {
-        "type": "params",
-        "properties": {
-          "orgId": {
-            "type": "integer"
+  "lexicon" : 1,
+  "id" : "com.etzhayyim.apps.organizer.getRecommendations",
+  "defs" : {
+    "main" : {
+      "type" : "query",
+      "description" : "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
+      "x-bootstrap" : true,
+      "parameters" : {
+        "type" : "params",
+        "properties" : {
+          "orgId" : {
+            "type" : "integer"
           }
         },
-        "required": []
+        "required" : [ ]
       },
-      "output": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "recommendations": {
-              "type": "string"
+      "output" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "recommendations" : {
+              "type" : "string"
             },
-            "total": {
-              "type": "integer"
+            "total" : {
+              "type" : "integer"
             },
-            "offset": {
-              "type": "integer"
+            "offset" : {
+              "type" : "integer"
             },
-            "limit": {
-              "type": "integer"
+            "limit" : {
+              "type" : "integer"
             },
-            "filter": {
-              "type": "object"
+            "filter" : {
+              "type" : "object"
             }
           },
-          "required": []
+          "required" : [ ]
         }
       }
     }

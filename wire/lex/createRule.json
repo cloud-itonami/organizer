@@ -1,57 +1,54 @@
 {
-  "lexicon": 1,
-  "id": "com.etzhayyim.apps.organizer.createRule",
-  "defs": {
-    "main": {
-      "type": "procedure",
-      "description": "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
-      "x-bootstrap": true,
-      "input": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "action": {
-              "type": "string"
+  "lexicon" : 1,
+  "id" : "com.etzhayyim.apps.organizer.createRule",
+  "defs" : {
+    "main" : {
+      "type" : "procedure",
+      "description" : "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
+      "x-bootstrap" : true,
+      "input" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "action" : {
+              "type" : "string"
             },
-            "condition": {
-              "type": "string"
+            "condition" : {
+              "type" : "string"
             },
-            "orgId": {
-              "type": "integer"
+            "orgId" : {
+              "type" : "integer"
             },
-            "priority": {
-              "type": "number"
+            "priority" : {
+              "type" : "number"
             },
-            "targetCollectionId": {
-              "type": "integer"
+            "targetCollectionId" : {
+              "type" : "integer"
             },
-            "userId": {
-              "type": "integer"
+            "userId" : {
+              "type" : "integer"
             }
           },
-          "required": [
-            "action",
-            "condition"
-          ]
+          "required" : [ "action", "condition" ]
         }
       },
-      "output": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "error": {
-              "type": "string"
+      "output" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "error" : {
+              "type" : "string"
             },
-            "status": {
-              "type": "string"
+            "status" : {
+              "type" : "string"
             },
-            "ruleId": {
-              "type": "integer"
+            "ruleId" : {
+              "type" : "integer"
             }
           },
-          "required": []
+          "required" : [ ]
         }
       }
     }

@@ -1,65 +1,63 @@
 {
-  "lexicon": 1,
-  "id": "com.etzhayyim.apps.organizer.createCollection",
-  "defs": {
-    "main": {
-      "type": "procedure",
-      "description": "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
-      "x-bootstrap": true,
-      "input": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "autoRules": {
-              "type": "boolean"
+  "lexicon" : 1,
+  "id" : "com.etzhayyim.apps.organizer.createCollection",
+  "defs" : {
+    "main" : {
+      "type" : "procedure",
+      "description" : "Auto-generated stub lexicon (F-Plan F2 bootstrap 2026-04-13). Tighten schema when migrating the app.",
+      "x-bootstrap" : true,
+      "input" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "autoRules" : {
+              "type" : "boolean"
             },
-            "description": {
-              "type": "string"
+            "description" : {
+              "type" : "string"
             },
-            "name": {
-              "type": "string"
+            "name" : {
+              "type" : "string"
             },
-            "orgId": {
-              "type": "integer"
+            "orgId" : {
+              "type" : "integer"
             },
-            "userId": {
-              "type": "integer"
+            "userId" : {
+              "type" : "integer"
             },
-            "visibility": {
-              "type": "string"
+            "visibility" : {
+              "type" : "string"
             }
           },
-          "required": [
-            "name"
-          ]
+          "required" : [ "name" ]
         }
       },
-      "output": {
-        "encoding": "application/json",
-        "schema": {
-          "type": "object",
-          "properties": {
-            "error": {
-              "type": "string"
+      "output" : {
+        "encoding" : "application/json",
+        "schema" : {
+          "type" : "object",
+          "properties" : {
+            "error" : {
+              "type" : "string"
             },
-            "internal": {
-              "type": "string"
+            "internal" : {
+              "type" : "string"
             },
-            "status": {
-              "type": "string"
+            "status" : {
+              "type" : "string"
             },
-            "collectionId": {
-              "type": "integer"
+            "collectionId" : {
+              "type" : "integer"
             },
-            "name": {
-              "type": "string"
+            "name" : {
+              "type" : "string"
             },
-            "visibility": {
-              "type": "string"
+            "visibility" : {
+              "type" : "string"
             }
           },
-          "required": []
+          "required" : [ ]
         }
       }
     }
