@@ -5,7 +5,7 @@
   no-server-key (only a member signature finalizes), and auto-organize (rule maps category →
   collection)."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [organizer.methods.agent :as agent]))
 
 (def VA "did:web:organizer.etzhayyim.com:vault:alice")
@@ -63,7 +63,7 @@
 
 (deftest test-no-profile-or-ad-field
   (let [c (agent/classify {"itemId" "i" "vaultDid" VA "filename" "a.pdf" "contentType" "application/pdf"})]
-    (is (every? (fn [k] (let [kl (str/lower-case k)]
+    (is (every? (fn [k] (let [kl (str/lower k)]
                           (and (not (str/includes? kl "profile"))
                                (not (str/includes? (str/replace kl "addr" "") "ad")))))
                 (keys c)))

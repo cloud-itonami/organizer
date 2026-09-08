@@ -6,7 +6,7 @@
   (G6 — only a member signature finalizes an upload). Classification is Murakumo-only when the rule
   layer is unsure (G7); the `from kotoba import datalog, llm` host binding is unused here, so the
   _murakumo_category fallback is the omitted leg (llm None → deterministic 'unknown')."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── content addressing + dedup (G4) ───────────────────────────────────────────
 (defn content-item-id
@@ -59,11 +59,11 @@
   extension); Murakumo only when the rule layer is unsure (G7, omitted → 'unknown'). Returns
   category/labels/source scoped to the item's vault (G3) — NEVER a profile or ad signal."
   [item]
-  (let [ct (str/lower-case (or (get item "contentType") ""))
+  (let [ct (str/lower (or (get item "contentType") ""))
         fname (get item "filename" "")
-        ext (str/lower-case (let [i (str/last-index-of fname ".")] (if i (subs fname (inc i)) fname)))
+        ext (str/lower (let [i (str/last-index-of fname ".")] (if i (subs fname (inc i)) fname)))
         category (or (get TYPE-CATEGORY ct) (get EXT-CATEGORY ext) "unknown")  ; llm leg omitted
-        fnl (str/lower-case fname)
+        fnl (str/lower fname)
         labels (cond-> [category]
                  (or (str/includes? fnl "receipt") (str/includes? fnl "invoice")) (conj "receipt"))]
     {"itemId" (get item "itemId")
