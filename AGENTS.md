@@ -174,7 +174,7 @@ interface subscription-discovery {
 
 ```
 60-apps/etzhayyim-project-organizer/
-├── CLAUDE.md
+├── AGENTS.md
 ├── wit/organizer/package.wit        # Domain WIT capability
 └── wasm/etzhayyim-wasm-organizer-org4n1z3/
     ├── src/app.ts                      # TS Native — Design E reactive pipeline
